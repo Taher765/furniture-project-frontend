@@ -1,0 +1,28 @@
+.mySwiper {
+  width: 100% !important;
+  height: 450px !important;
+  background: red !important;
+}
+.mySwiper .slide-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.mySwiper .slide-item .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 25px;
+  background-color: rgb(196 187 187 / 73%) !important;
+
+}
+.mySwiper img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--main-btn);
+}

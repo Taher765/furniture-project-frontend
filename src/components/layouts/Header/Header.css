@@ -4,3 +4,8 @@
 .navbar .logo {
     color: var(--main-heading);
 }
+
+
+a {
+    text-decoration: none !important;
+}

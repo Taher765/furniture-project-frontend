@@ -1,0 +1,12 @@
+.category {
+    
+}
+.category .item div  {
+    border: 1px solid var(--border-color) !important;
+    background-color: var(--bg-section);
+    cursor: pointer;
+}
+.category .item div img {
+    width: 60px;
+    height: 50px;
+}

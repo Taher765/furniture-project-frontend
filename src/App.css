@@ -1,7 +1,8 @@
 
 html, body {
     direction: rtl;
-    background-color: var(--bg-Secondary);
+    background-color: var(--bg-Secondary) !important;
+     
 }
 * {
     box-sizing: border-box;
@@ -24,4 +25,26 @@ html, body {
     --alert-stoce: #E07A5F;
     --color-error : #C85A54;
     --border-color : #E8DFD4;
+}
+
+.btn-style {
+    background-color: var(--main-btn) !important;
+    color: #fff !important;
+    padding: 7px !important;
+    border: none !important;
+    transition: .5s !important;
+    border-radius: 5px !important;
+}
+.btn-style:hover {
+    background-color: var(--btn-hover);
+}
+
+.text-style {
+    color: var(--main-heading);
+}
+.text-style2 
+{
+    color: var(--bg-card-admin);
+
+    
 }
