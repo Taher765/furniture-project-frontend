@@ -1,0 +1,27 @@
+
+html, body {
+    direction: rtl;
+    background-color: var(--bg-Secondary);
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+:root {
+    --main-btn : #8B5E3C;
+    --btn-hover : #6F4A2F;
+    --bg-section : #F5EDE4;
+    --bg-Secondary : #FAF7F2;
+    --bg-card-admin: #2C2118;
+    --main-heading : #6B5E52;
+    --main-success: #4CAF50;
+    --alert-stoce: #E07A5F;
+    --color-error : #C85A54;
+    --border-color : #E8DFD4;
+}

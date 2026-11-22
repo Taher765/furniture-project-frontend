@@ -1,0 +1,6 @@
+.navbar {
+    background-color: var(--bg-Secondary) !important;
+}
+.navbar .logo {
+    color: var(--main-heading);
+}
