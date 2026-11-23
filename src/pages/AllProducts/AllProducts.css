@@ -1,0 +1,32 @@
+:root {
+  --main-btn: #8b5e3c;
+  --btn-hover: #6f4a2f;
+  --bg-section: #f5ede4;
+  --bg-Secondary: #faf7f2;
+  --bg-card-admin: #2c2118;
+  --main-heading: #6b5e52;
+  --main-success: #4caf50;
+  --alert-stoce: #e07a5f;
+  --color-error: #c85a54;
+  --border-color: #e8dfd4;
+}
+.filter {
+  background-color: var(--bg-section);
+}
+.filter .form-check-input:checked {
+  background-color: var(--btn-hover);
+  border-color: var(--main-btn);
+}
+.filter .form-check-input:focus {
+  border-color: var(--main-btn);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #6b5e524d;
+}
+.filter label {
+  font-size: 14px;
+  font-weight: bold;
+}
+.filter .form-check-input,
+.filter label {
+  cursor: pointer;
+}

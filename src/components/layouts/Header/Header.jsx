@@ -11,18 +11,17 @@ import { FiLogIn } from "react-icons/fi";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Logo from "../../../assets/images/logo.png";
 function Header() {
-  const [auth, setAuth] = useState(false);
+  const [auth, setAuth] = useState(true);
   useEffect(() => {
     console.log("faaf");
   }, [setAuth]);
   return (
     <Navbar expand="lg" className="shadow-sm navbar">
       <Container fluid>
-        <Link to={"/"}>
-          <Navbar.Brand href="#" className="logo">
-            بيت الخشب
-          </Navbar.Brand>
+        <Link to={"/"} className="logo navbar-brand">
+          <img src={Logo} alt="" />
         </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -31,47 +30,53 @@ function Header() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link to={"/"}>
-              <Nav.Link href="#action1">الرئيسية</Nav.Link>
+            <Link className="nav-link" to={"/AllProducts"}>
+              المنتجات
             </Link>
-            <Link to={"/AllProducts"}>
-              <Nav.Link href="#action2">المنتجات</Nav.Link>
-            </Link>
-            <Link to={"/Orders"}>
-              <Nav.Link href="#action2">تتبع الطلبات</Nav.Link>
+            <Link className="nav-link" to={"/Orders"}>
+              تتبع الطلبات
             </Link>
 
             <NavDropdown title="جميع التصنيفات" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">المعيشخ</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">غرف موم</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">سرير</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">كراسي</NavDropdown.Item>
+              <Link className="nav-link" to={"ظ"}>
+                تصنيف 1
+              </Link>
+              <Link className="nav-link" to={"ظ"}>
+                تصنيف 1
+              </Link>
+              <Link className="nav-link" to={"ظ"}>
+                تصنيف 1
+              </Link>
+              <Link className="nav-link" to={"ظ"}>
+                تصنيف 1
+              </Link>
+              <Link className="nav-link" to={"ظ"}>
+                تصنيف 1
+              </Link>
             </NavDropdown>
             {auth ? (
               <NavDropdown title={<FaUser />} id="navbarScrollingDropdown">
-                <Link to={"/User"}>
-                  <NavDropdown.Item href="#action4">
-                    الصفحه الشخصيه{" "}
-                  </NavDropdown.Item>
+                <Link className="nav-link" to={"/User"}>
+                  الصفحه الشخصيه{" "}
                 </Link>
 
                 <NavDropdown.Divider />
-                <NavDropdown.Item className="btn btn-danger" href="#action5">
+                <Link
+                  className="nav-link btn btn-danger"
+                  to={"/Login"}
+                  href="#action5"
+                >
                   تشجيل الحروج
-                </NavDropdown.Item>
+                </Link>
               </NavDropdown>
             ) : (
-              <Link to={"/Login"}>
-                <Nav.Link href="#action2">
-                  <FiLogIn />
-                </Nav.Link>
+              <Link className="nav-link" to={"/Login"}>
+                <FiLogIn />
               </Link>
             )}
 
-            <Link to={"/Cart"}>
-              <Nav.Link href="#action2">
-                <FaShoppingCart />
-              </Nav.Link>
+            <Link className="nav-link" to={"/Cart"}>
+              <FaShoppingCart />
             </Link>
           </Nav>
           <Form className="d-flex">

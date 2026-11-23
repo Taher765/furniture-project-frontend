@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -36,7 +37,7 @@ function LoginForm() {
           <div className="loginSection shadow p-4 rounded">
             <h1>تسجيل الدخول</h1>
             <p>مرحبا لعودتك! يرجي تسجل الدخول لمتابعه التسوق</p>
-            <Form>
+            <Form className="mb-2">
               <div className="form-group">
                 <label htmlFor="email">البريد الالكتروني</label>
                 <div className="devEmail">
@@ -67,12 +68,18 @@ function LoginForm() {
                 </div>
               </div>
               <p className="text-right">
-                <a href="#">نسيت كلمه المرور؟</a>
+                <Link to={"/Forgot-Password"} className="forgotLink">
+                  نسيت كلمه المرور؟
+                </Link>
               </p>
               <button onClick={handelSubmit} className=" login-btn">
                 دخول
               </button>
             </Form>
+            <span className="">ليس لديك حساب </span>{" "}
+            <Link className="registerLink" to={"/Register"}>
+              انشاء حساب{" "}
+            </Link>
           </div>
         </Container>
       </section>

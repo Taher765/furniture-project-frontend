@@ -8,6 +8,7 @@ import AllProducts from "./pages/AllProducts/AllProducts";
 import Orders from "./pages/Orders/Orders";
 import Cart from "./pages/Cart/Cart";
 import { useState } from "react";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 function App() {
   const [auth, setAuth] = useState(true);
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/User" element={<User />} />
         <Route path="/AllProducts" element={<AllProducts />} />
+        <Route path="/ProductDetails" element={<ProductDetails />} />
         <Route path="/Orders" element={<Orders />} />
         <Route path="/Cart" element={auth ? <Cart /> : <LoginPage />} />
       </Routes>

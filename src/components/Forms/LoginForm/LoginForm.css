@@ -1,58 +1,58 @@
 .login {
-    background-color: var(--bg-section);
-    height: 100vh;
+  background-color: var(--bg-section);
+  height: 100vh;
 }
 
 .login .title {
-    text-align: center;
-    color: var(--main-heading);
+  text-align: center;
+  color: var(--main-heading);
 }
 
- .login .loginSection {
-    background-color: var(--bg-Secondary);
-    max-width: 450px;
-    min-width: 350px;
+.login .loginSection {
+  background-color: var(--bg-Secondary);
+  max-width: 450px;
+  min-width: 350px;
+}
+.login .loginSection h1 {
+  color: var(--main-heading);
+  text-align: center;
+}
+.login .loginSection p {
+  color: var(--main-heading);
+  font-size: 14px;
 
+  font-weight: bold;
+}
+.login a {
+  color: var(--main-heading);
+}
+.login .loginSection form .devEmail {
+  position: relative;
+}
+.login .loginSection form .icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translatey(-50%);
+  font-size: 20px;
+  color: var(--main-heading);
+}
 
- }
-  .login .loginSection h1 {
-    color: var(--main-heading);
-    text-align: center;
-  }
-  .login .loginSection p {
-    color: var(--main-heading);
-    font-size: 14px;
-
-    font-weight: bold;
-  }
-    .login .loginSection p a {
-    color: var(--main-heading);
-    }
-  .login .loginSection form .devEmail{
-   position: relative;
-  
-  }
-  .login .loginSection form .icon{
-   position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translatey(-50%);
-    font-size: 20px;
-    color: var(--main-heading);
-  }
-
-  .login .login-btn {
-    background-color: var(--main-btn);
-    width: 100%;
-    color: #fff;
-    padding: 7px;
-    border: none;
-    transition: .5s;
-    border-radius: 5px;
-
+.login .login-btn {
+  background-color: var(--main-btn);
+  width: 100%;
+  color: #fff;
+  padding: 7px;
+  border: none;
+  transition: 0.5s;
+  border-radius: 5px;
 }
 .login .login-btn:hover {
-    background-color: var(--btn-hover);
-    color: #fff;
+  background-color: var(--btn-hover);
+  color: #fff;
+}
 
+.forgotLink,
+.registerLink {
+  text-decoration: underline !important;
 }

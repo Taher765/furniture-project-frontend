@@ -16,7 +16,7 @@ function Slider() {
     <>
       <Swiper
         autoplay={{
-          delay: 2000000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         navigation={true}

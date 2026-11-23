@@ -1,8 +1,9 @@
 .navbar {
     background-color: var(--bg-Secondary) !important;
 }
-.navbar .logo {
-    color: var(--main-heading);
+.navbar .logo img {
+       width: 75px;
+    height: 45px;
 }
 
 
