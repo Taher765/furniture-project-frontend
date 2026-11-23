@@ -10,13 +10,11 @@ import { FiLogIn } from "react-icons/fi";
 
 import "./Header.css";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Logo from "../../../assets/images/logo.png";
 function Header() {
   const [auth, setAuth] = useState(true);
-  useEffect(() => {
-    console.log("faaf");
-  }, [setAuth]);
+
   return (
     <Navbar expand="lg" className="shadow-sm navbar">
       <Container fluid>

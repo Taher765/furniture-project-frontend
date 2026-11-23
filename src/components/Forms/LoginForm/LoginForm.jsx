@@ -5,6 +5,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../../assets/images/logo.png";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -31,7 +32,7 @@ function LoginForm() {
       <section className="login">
         <Container className="d-flex flex-column h-100 justify-content-center align-items-center">
           <div className="title">
-            <h2>بيت الخشب</h2>
+            <img src={Logo} height={80} width={120} alt="" />
             <p>اثاث يلهم بيتك</p>
           </div>
           <div className="loginSection shadow p-4 rounded">
